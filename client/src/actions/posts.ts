@@ -1,7 +1,7 @@
 import * as api from '../api';
 
 // Action Creators
-export const getPosts = () => async (dispatch) => {
+export const getPosts = () => async (dispatch: any) => {
   try {
     const { data } = await api.fetchPosts();
 

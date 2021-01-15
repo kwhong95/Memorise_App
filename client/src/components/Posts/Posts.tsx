@@ -1,7 +1,12 @@
 import React, { FC } from 'react'
+import { useSelector } from 'react-redux';
 import Post from './Post/Post';
 
+import useStyles from './styles';
+
 const Posts: FC = () => {
+  const posts = useSelector((state) => state.posts);
+  const classes = useStyles();
   return (
     <>
       <h1>
